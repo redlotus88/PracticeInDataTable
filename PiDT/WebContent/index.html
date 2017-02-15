@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Practice in DataTable</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<!-- DataTable：引入Javascript / CSS （CDN）-->
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+<!-- DataTables 引入结束 -->
+</head>
+<body style="position:relative">
+	<div style="width：50%">
+		<!--第二步：添加如下 HTML 代码-->
+		<table id="table_id_example" class="display">
+			<thead>
+				<tr>
+					<th>Column 1</th>
+					<th>Column 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Row 1 Data 1</td>
+					<td>Row 1 Data 2</td>
+				</tr>
+				<tr>
+					<td>Row 2 Data 1</td>
+					<td>Row 2 Data 2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+$(document).ready( function () {
+    $('#table_id_example').DataTable();
+} );
+</script>
+
+</html>
